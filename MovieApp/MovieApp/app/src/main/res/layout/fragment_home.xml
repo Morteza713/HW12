@@ -1,0 +1,765 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3">
+
+            <ImageView
+                android:id="@+id/img11"
+                android:layout_width="107dp"
+                android:layout_height="107dp"
+                android:layout_marginStart="16dp"
+                android:layout_weight="0.75"
+                android:contentDescription="Scary Movie"
+                android:src="@drawable/pic1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn11"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:onClick="btnClick"
+                android:background="@drawable/ic_favorite"
+                app:layout_constraintBottom_toTopOf="@+id/tv11"
+                app:layout_constraintEnd_toEndOf="@+id/img11" />
+
+            <TextView
+                android:id="@+id/tv11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Scary Movie"
+                app:layout_constraintLeft_toLeftOf="@id/img11"
+                app:layout_constraintRight_toRightOf="@id/img11"
+                app:layout_constraintTop_toBottomOf="@id/img11" />
+
+            <ImageView
+                android:id="@+id/img12"
+                android:layout_width="107dp"
+                android:layout_height="107dp"
+                android:layout_marginStart="24dp"
+                android:layout_weight="0.75"
+                android:contentDescription="Spiderman"
+                android:src="@drawable/pic2"
+                app:layout_constraintStart_toEndOf="@id/img11"
+                app:layout_constraintTop_toTopOf="parent" />
+            <Button
+                android:id="@+id/btn12"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:onClick="btnClick"
+                android:background="@drawable/ic_favorite"
+                android:gravity="bottom|center_horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/tv12"
+                app:layout_constraintEnd_toEndOf="@+id/img12" />
+
+            <TextView
+                android:id="@+id/tv12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Spiderman"
+                app:layout_constraintLeft_toLeftOf="@id/img12"
+                app:layout_constraintRight_toRightOf="@id/img12"
+                app:layout_constraintTop_toBottomOf="@id/img12" />
+
+            <ImageView
+                android:id="@+id/img13"
+                android:layout_width="107dp"
+                android:layout_height="107dp"
+                android:layout_marginStart="24dp"
+                android:layout_weight="0.75"
+                android:contentDescription="Avenger"
+                android:src="@drawable/pic3"
+                app:layout_constraintStart_toEndOf="@id/img12"
+                app:layout_constraintTop_toTopOf="parent" />
+            <Button
+                android:id="@+id/btn13"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:onClick="btnClick"
+                android:background="@drawable/ic_favorite"
+                android:gravity="bottom|center_horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/tv13"
+                app:layout_constraintEnd_toEndOf="@+id/img13" />
+
+            <TextView
+                android:id="@+id/tv13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Avenger"
+                app:layout_constraintLeft_toLeftOf="@id/img13"
+                app:layout_constraintRight_toRightOf="@id/img13"
+                app:layout_constraintTop_toBottomOf="@id/img13" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3">
+
+            <ImageView
+                android:id="@+id/img21"
+                android:layout_width="107dp"
+                android:layout_height="107dp"
+                android:layout_marginStart="16dp"
+                android:layout_weight="0.75"
+                android:contentDescription="Shang Chi"
+                android:src="@drawable/pic4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <Button
+                android:id="@+id/btn21"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:onClick="btnClick"
+                android:background="@drawable/ic_favorite"
+                android:gravity="bottom|center_horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/tv21"
+                app:layout_constraintEnd_toEndOf="@+id/img21" />
+
+            <TextView
+                android:id="@+id/tv21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Shang Chi"
+                app:layout_constraintLeft_toLeftOf="@id/img21"
+                app:layout_constraintRight_toRightOf="@id/img21"
+                app:layout_constraintTop_toBottomOf="@id/img21" />
+
+            <ImageView
+                android:id="@+id/img22"
+                android:layout_width="107dp"
+                android:layout_height="107dp"
+                android:layout_marginStart="24dp"
+                android:layout_weight="0.75"
+                android:contentDescription="Zero Dark Thirty"
+                android:src="@drawable/pic5"
+                app:layout_constraintStart_toEndOf="@id/img21"
+                app:layout_constraintTop_toTopOf="parent" />
+            <Button
+                android:id="@+id/btn22"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:onClick="btnClick"
+                android:background="@drawable/ic_favorite"
+                android:gravity="bottom|center_horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/tv22"
+                app:layout_constraintEnd_toEndOf="@+id/img22" />
+
+            <TextView
+                android:id="@+id/tv22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Zero Dark Thirty"
+                app:layout_constraintLeft_toLeftOf="@id/img22"
+                app:layout_constraintRight_toRightOf="@id/img22"
+                app:layout_constraintTop_toBottomOf="@id/img22" />
+
+            <ImageView
+                android:id="@+id/img23"
+                android:layout_width="107dp"
+                android:layout_height="107dp"
+                android:layout_marginStart="24dp"
+                android:layout_weight="0.75"
+                android:contentDescription="Dora"
+                android:src="@drawable/pic6"
+                app:layout_constraintStart_toEndOf="@id/img22"
+                app:layout_constraintTop_toTopOf="parent" />
+            <Button
+                android:id="@+id/btn23"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:onClick="btnClick"
+                android:background="@drawable/ic_favorite"
+                android:gravity="bottom|center_horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/tv23"
+                app:layout_constraintEnd_toEndOf="@+id/img23" />
+
+            <TextView
+                android:id="@+id/tv23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Dora"
+                app:layout_constraintLeft_toLeftOf="@id/img23"
+                app:layout_constraintRight_toRightOf="@id/img23"
+                app:layout_constraintTop_toBottomOf="@id/img23" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3">
+
+            <ImageView
+                android:id="@+id/img31"
+                android:layout_width="107dp"
+                android:layout_height="107dp"
+                android:layout_marginStart="16dp"
+                android:layout_weight="0.75"
+                android:contentDescription="BloodShot"
+                android:src="@drawable/pic7"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <Button
+                android:id="@+id/btn31"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:onClick="btnClick"
+                android:background="@drawable/ic_favorite"
+                android:gravity="bottom|center_horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/tv31"
+                app:layout_constraintEnd_toEndOf="@+id/img31" />
+
+            <TextView
+                android:id="@+id/tv31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="BloodShot"
+                app:layout_constraintLeft_toLeftOf="@id/img31"
+                app:layout_constraintRight_toRightOf="@id/img31"
+                app:layout_constraintTop_toBottomOf="@id/img31" />
+
+            <ImageView
+                android:id="@+id/img32"
+                android:layout_width="107dp"
+                android:layout_height="107dp"
+                android:layout_marginStart="24dp"
+                android:layout_weight="0.75"
+                android:contentDescription="Atrangi Re"
+                android:src="@drawable/pic8"
+                app:layout_constraintStart_toEndOf="@id/img31"
+                app:layout_constraintTop_toTopOf="parent" />
+            <Button
+                android:id="@+id/btn32"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:onClick="btnClick"
+                android:background="@drawable/ic_favorite"
+                android:gravity="bottom|center_horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/tv32"
+                app:layout_constraintEnd_toEndOf="@+id/img32" />
+
+            <TextView
+                android:id="@+id/tv32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Atrangi Re"
+                app:layout_constraintLeft_toLeftOf="@id/img32"
+                app:layout_constraintRight_toRightOf="@id/img32"
+                app:layout_constraintTop_toBottomOf="@id/img32" />
+
+            <ImageView
+                android:id="@+id/img33"
+                android:layout_width="107dp"
+                android:layout_height="107dp"
+                android:layout_marginStart="24dp"
+                android:layout_weight="0.75"
+                android:contentDescription="Allaedin"
+                android:src="@drawable/pic9"
+                app:layout_constraintStart_toEndOf="@id/img32"
+                app:layout_constraintTop_toTopOf="parent" />
+            <Button
+                android:id="@+id/btn33"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:onClick="btnClick"
+                android:background="@drawable/ic_favorite"
+                android:gravity="bottom|center_horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/tv33"
+                app:layout_constraintEnd_toEndOf="@+id/img33" />
+
+            <TextView
+                android:id="@+id/tv33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Allaedin"
+                app:layout_constraintLeft_toLeftOf="@id/img33"
+                app:layout_constraintRight_toRightOf="@id/img33"
+                app:layout_constraintTop_toBottomOf="@id/img33" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3">
+
+            <ImageView
+                android:id="@+id/img41"
+                android:layout_width="107dp"
+                android:layout_height="107dp"
+                android:layout_marginStart="16dp"
+                android:layout_weight="0.75"
+                android:contentDescription="Black Widow"
+                android:src="@drawable/pic10"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <Button
+                android:id="@+id/btn41"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:onClick="btnClick"
+                android:background="@drawable/ic_favorite"
+                android:gravity="bottom|center_horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/tv41"
+                app:layout_constraintEnd_toEndOf="@+id/img41" />
+
+            <TextView
+                android:id="@+id/tv41"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Black Widow"
+                app:layout_constraintLeft_toLeftOf="@id/img41"
+                app:layout_constraintRight_toRightOf="@id/img41"
+                app:layout_constraintTop_toBottomOf="@id/img41" />
+
+            <ImageView
+                android:id="@+id/img42"
+                android:layout_width="107dp"
+                android:layout_height="107dp"
+                android:layout_marginStart="24dp"
+                android:layout_weight="0.75"
+                android:contentDescription="Matrix IV"
+                android:src="@drawable/pic11"
+                app:layout_constraintStart_toEndOf="@id/img41"
+                app:layout_constraintTop_toTopOf="parent" />
+            <Button
+                android:id="@+id/btn42"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:onClick="btnClick"
+                android:background="@drawable/ic_favorite"
+                android:gravity="bottom|center_horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/tv42"
+                app:layout_constraintEnd_toEndOf="@+id/img42" />
+
+            <TextView
+                android:id="@+id/tv42"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Matrix IV"
+                app:layout_constraintLeft_toLeftOf="@id/img42"
+                app:layout_constraintRight_toRightOf="@id/img42"
+                app:layout_constraintTop_toBottomOf="@id/img42" />
+
+            <ImageView
+                android:id="@+id/img43"
+                android:layout_width="107dp"
+                android:layout_height="107dp"
+                android:layout_marginStart="24dp"
+                android:layout_weight="0.75"
+                android:contentDescription="Sing"
+                android:src="@drawable/pic12"
+                app:layout_constraintStart_toEndOf="@id/img42"
+                app:layout_constraintTop_toTopOf="parent" />
+            <Button
+                android:id="@+id/btn43"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:onClick="btnClick"
+                android:background="@drawable/ic_favorite"
+                android:gravity="bottom|center_horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/tv43"
+                app:layout_constraintEnd_toEndOf="@+id/img43" />
+
+            <TextView
+                android:id="@+id/tv43"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Sing"
+                app:layout_constraintLeft_toLeftOf="@id/img43"
+                app:layout_constraintRight_toRightOf="@id/img43"
+                app:layout_constraintTop_toBottomOf="@id/img43" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3">
+
+            <ImageView
+                android:id="@+id/img51"
+                android:layout_width="107dp"
+                android:layout_height="107dp"
+                android:layout_marginStart="16dp"
+                android:layout_weight="0.75"
+                android:contentDescription="Coco"
+                android:src="@drawable/pic14"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <Button
+                android:id="@+id/btn51"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:onClick="btnClick"
+                android:background="@drawable/ic_favorite"
+                android:gravity="bottom|center_horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/tv51"
+                app:layout_constraintEnd_toEndOf="@+id/img51" />
+
+            <TextView
+                android:id="@+id/tv51"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Coco"
+                app:layout_constraintLeft_toLeftOf="@id/img51"
+                app:layout_constraintRight_toRightOf="@id/img51"
+                app:layout_constraintTop_toBottomOf="@id/img51" />
+
+            <ImageView
+                android:id="@+id/img52"
+                android:layout_width="107dp"
+                android:layout_height="107dp"
+                android:layout_marginStart="24dp"
+                android:layout_weight="0.75"
+                android:contentDescription="Crimes of Grindelwald"
+                android:src="@drawable/pic15"
+                app:layout_constraintStart_toEndOf="@id/img51"
+                app:layout_constraintTop_toTopOf="parent" />
+            <Button
+                android:id="@+id/btn52"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:onClick="btnClick"
+                android:background="@drawable/ic_favorite"
+                android:gravity="bottom|center_horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/tv52"
+                app:layout_constraintEnd_toEndOf="@+id/img52" />
+
+            <TextView
+                android:id="@+id/tv52"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Crimes of Grindelwald"
+                app:layout_constraintLeft_toLeftOf="@id/img52"
+                app:layout_constraintRight_toRightOf="@id/img52"
+                app:layout_constraintTop_toBottomOf="@id/img52" />
+
+            <ImageView
+                android:id="@+id/img53"
+                android:layout_width="107dp"
+                android:layout_height="107dp"
+                android:layout_marginStart="24dp"
+                android:layout_weight="0.75"
+                android:contentDescription="Suicade Squad"
+                android:src="@drawable/pic16"
+                app:layout_constraintStart_toEndOf="@id/img52"
+                app:layout_constraintTop_toTopOf="parent" />
+            <Button
+                android:id="@+id/btn53"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:onClick="btnClick"
+                android:background="@drawable/ic_favorite"
+                android:gravity="bottom|center_horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/tv53"
+                app:layout_constraintEnd_toEndOf="@+id/img53" />
+
+            <TextView
+                android:id="@+id/tv53"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Suicade Squad"
+                app:layout_constraintLeft_toLeftOf="@id/img53"
+                app:layout_constraintRight_toRightOf="@id/img53"
+                app:layout_constraintTop_toBottomOf="@id/img53" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3">
+
+            <ImageView
+                android:id="@+id/img61"
+                android:layout_width="107dp"
+                android:layout_height="107dp"
+                android:layout_marginStart="16dp"
+                android:layout_weight="0.75"
+                android:contentDescription="Venom"
+                android:src="@drawable/pic17"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <Button
+                android:id="@+id/btn61"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:onClick="btnClick"
+                android:background="@drawable/ic_favorite"
+                android:gravity="bottom|center_horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/tv61"
+                app:layout_constraintEnd_toEndOf="@+id/img61" />
+
+            <TextView
+                android:id="@+id/tv61"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Venom"
+                app:layout_constraintLeft_toLeftOf="@id/img61"
+                app:layout_constraintRight_toRightOf="@id/img61"
+                app:layout_constraintTop_toBottomOf="@id/img61" />
+
+            <ImageView
+                android:id="@+id/img62"
+                android:layout_width="107dp"
+                android:layout_height="107dp"
+                android:layout_marginStart="24dp"
+                android:layout_weight="0.75"
+                android:contentDescription="Dracula"
+                android:src="@drawable/pic18"
+                app:layout_constraintStart_toEndOf="@id/img61"
+                app:layout_constraintTop_toTopOf="parent" />
+            <Button
+                android:id="@+id/btn62"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:onClick="btnClick"
+                android:background="@drawable/ic_favorite"
+                android:gravity="bottom|center_horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/tv62"
+                app:layout_constraintEnd_toEndOf="@+id/img62" />
+
+            <TextView
+                android:id="@+id/tv62"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Dracula"
+                app:layout_constraintLeft_toLeftOf="@id/img62"
+                app:layout_constraintRight_toRightOf="@id/img62"
+                app:layout_constraintTop_toBottomOf="@id/img62" />
+
+            <ImageView
+                android:id="@+id/img63"
+                android:layout_width="107dp"
+                android:layout_height="107dp"
+                android:layout_marginStart="24dp"
+                android:layout_weight="0.75"
+                android:contentDescription="Divergent"
+                android:src="@drawable/pic19"
+                app:layout_constraintStart_toEndOf="@id/img62"
+                app:layout_constraintTop_toTopOf="parent" />
+            <Button
+                android:id="@+id/btn63"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:onClick="btnClick"
+                android:background="@drawable/ic_favorite"
+                android:gravity="bottom|center_horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/tv63"
+                app:layout_constraintEnd_toEndOf="@+id/img63" />
+
+            <TextView
+                android:id="@+id/tv63"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Divergent"
+                app:layout_constraintLeft_toLeftOf="@id/img63"
+                app:layout_constraintRight_toRightOf="@id/img63"
+                app:layout_constraintTop_toBottomOf="@id/img63" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            >
+
+            <ImageView
+                android:id="@+id/img71"
+                android:layout_width="107dp"
+                android:layout_height="107dp"
+                android:layout_marginStart="16dp"
+                android:layout_weight="0.75"
+                android:contentDescription="Edge of Tomarrow"
+                android:src="@drawable/pic20"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <Button
+                android:id="@+id/btn71"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:onClick="btnClick"
+                android:background="@drawable/ic_favorite"
+                android:gravity="bottom|center_horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/tv71"
+                app:layout_constraintEnd_toEndOf="@+id/img71" />
+
+            <TextView
+                android:id="@+id/tv71"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Edge of Tomarrow"
+                app:layout_constraintLeft_toLeftOf="@id/img71"
+                app:layout_constraintRight_toRightOf="@id/img71"
+                app:layout_constraintTop_toBottomOf="@id/img71" />
+
+            <ImageView
+                android:id="@+id/img72"
+                android:layout_width="107dp"
+                android:layout_height="107dp"
+                android:layout_marginStart="24dp"
+                android:layout_weight="0.75"
+                android:contentDescription="Batman"
+                android:src="@drawable/pic21"
+                app:layout_constraintStart_toEndOf="@id/img71"
+                app:layout_constraintTop_toTopOf="parent" />
+            <Button
+                android:id="@+id/btn72"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:onClick="btnClick"
+                android:background="@drawable/ic_favorite"
+                android:gravity="bottom|center_horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/tv72"
+                app:layout_constraintEnd_toEndOf="@+id/img72" />
+
+            <TextView
+                android:id="@+id/tv72"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Batman"
+                app:layout_constraintLeft_toLeftOf="@id/img72"
+                app:layout_constraintRight_toRightOf="@id/img72"
+                app:layout_constraintTop_toBottomOf="@id/img72" />
+
+            <ImageView
+                android:id="@+id/img73"
+                android:layout_width="107dp"
+                android:layout_height="107dp"
+                android:layout_marginStart="24dp"
+                android:layout_weight="0.75"
+                android:contentDescription="John Wick"
+                android:src="@drawable/pic22"
+                app:layout_constraintStart_toEndOf="@id/img72"
+                app:layout_constraintTop_toTopOf="parent" />
+            <Button
+                android:id="@+id/btn73"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:onClick="btnClick"
+                android:background="@drawable/ic_favorite"
+                android:gravity="bottom|center_horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/tv73"
+                app:layout_constraintEnd_toEndOf="@+id/img73" />
+
+            <TextView
+                android:id="@+id/tv73"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="John Wick"
+                app:layout_constraintLeft_toLeftOf="@id/img73"
+                app:layout_constraintRight_toRightOf="@id/img73"
+                app:layout_constraintTop_toBottomOf="@id/img73" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="70dp"/>
+
+
+</LinearLayout>
+
+</ScrollView>

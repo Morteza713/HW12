@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="24dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="3">
+
+                <ImageView
+                    android:id="@+id/img11"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="0.75"
+                    android:contentDescription="John Wick 4"
+                    android:src="@drawable/soon1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/btn11"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:background="@drawable/ic_share"
+                    app:layout_constraintBottom_toBottomOf="@+id/img11"
+                    app:layout_constraintEnd_toEndOf="@+id/img11" />
+                <TextView
+                    android:id="@+id/tvTitle11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="John Wick 4"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintLeft_toLeftOf="@id/img11"
+                    app:layout_constraintRight_toRightOf="@id/img11"
+                    app:layout_constraintTop_toBottomOf="@id/img11" />
+                <TextView
+                    android:id="@+id/tvDec12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Action"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintLeft_toLeftOf="@id/tvTitle11"
+                    app:layout_constraintRight_toRightOf="@id/tvTitle11"
+                    app:layout_constraintTop_toBottomOf="@id/tvTitle11" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="24dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="3">
+
+                <ImageView
+                    android:id="@+id/img21"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="0.75"
+                    android:contentDescription="Thor"
+                    android:src="@drawable/soon2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <Button
+                    android:id="@+id/btn21"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:background="@drawable/ic_share"
+                    app:layout_constraintBottom_toBottomOf="@+id/img21"
+                    app:layout_constraintEnd_toEndOf="@+id/img21" />
+
+                <TextView
+                    android:id="@+id/tvTitle21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Thor Love And Thunder"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintLeft_toLeftOf="@id/img21"
+                    app:layout_constraintRight_toRightOf="@id/img21"
+                    app:layout_constraintTop_toBottomOf="@id/img21" />
+                <TextView
+                    android:id="@+id/tvDec21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Fantasy"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintLeft_toLeftOf="@id/tvTitle21"
+                    app:layout_constraintRight_toRightOf="@id/tvTitle21"
+                    app:layout_constraintTop_toBottomOf="@id/tvTitle21" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="24dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="3">
+
+                <ImageView
+                    android:id="@+id/img31"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="0.75"
+                    android:contentDescription="Avatar"
+                    android:src="@drawable/soon3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <Button
+                    android:id="@+id/btn31"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:background="@drawable/ic_share"
+                    app:layout_constraintBottom_toBottomOf="@+id/img31"
+                    app:layout_constraintEnd_toEndOf="@+id/img31" />
+
+                <TextView
+                    android:id="@+id/tvTitle31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Avatar 2"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintLeft_toLeftOf="@id/img31"
+                    app:layout_constraintRight_toRightOf="@id/img31"
+                    app:layout_constraintTop_toBottomOf="@id/img31" />
+                <TextView
+                    android:id="@+id/tvDec31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Science fiction"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintLeft_toLeftOf="@id/tvTitle31"
+                    app:layout_constraintRight_toRightOf="@id/tvTitle31"
+                    app:layout_constraintTop_toBottomOf="@id/tvTitle31" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+</LinearLayout>
+
+
+
+</ScrollView>
